@@ -4,7 +4,7 @@ EXPOSE 8081
 
 ENV APP_HOME /usr/src/app
 
-COPY . .
+COPY target/secretsanta-0.0.1-SNAPSHOT.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
