@@ -1,11 +1,11 @@
 FROM openjdk:17-jdk-alpine
 
-WORKDIR $APP_HOME
+WORKDIR app
 
 COPY . .
   
 EXPOSE 8080
  
-ENV APP_HOME /usr/src/app
+ENV app /usr/src/app
 
 ENTRYPOINT exec java -jar app.jar 
